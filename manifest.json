@@ -1,0 +1,15 @@
+{
+    "manifest_version":2,
+    "name": "Alert Copy",
+    "description": "Allows to copy alerts with linebreaks by converting them to prompts!",
+    "version": "1.0",
+    "permissions": ["activeTab"],
+
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "run_at": "document_end",
+            "js": ["content.js"]
+        }
+    ]
+}
